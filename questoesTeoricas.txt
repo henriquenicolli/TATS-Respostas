@@ -1,0 +1,35 @@
+	Atividade 02 - Revisão inicial (Parte 1)
+	
+	- O que é o teste de software? Qual a melhor definição?
+		Executar um software para verificar possíveis erros e para ter um feedback do software. E a melhor definição pode-se dizer que é a investigação da qualidade do software.
+
+	- O que é teste de unidade, integração e sistema?
+		Um teste de unidade é aquele que testa uma única unidade do sistema, teste de integração é aquele que testa a integração entre duas partes do seu sistema, e o teste de sistema garante que o sistema funciona como um todo.
+
+	- O que é um caso de teste? Dê exemplos.
+		Um Caso de teste é um conjunto de entradas, condições de execução e resultados esperados desenvolvidos para verificar o cumprimento de um requisito específico.
+		
+		describe("Suite de testes de adição", function(){
+			var Calculadora = require('../../src/js/calculadora.js');
+
+			it('deve retornar 5 para 2 e 3', function(){
+				expect(Calculadora.adicionar(2,3)).toEqual(5);
+			});
+		});
+		
+	- Qual a diferença entre um teste manual e um teste automatizado?
+		Teste manual é quando um profissional verifica manualmente os fluxos desejados, já o teste automatizado é feitos através de um software programado, podendo ser unitário ou de ponta a ponta.
+
+	- Explique a diferença entre o teste caixa-branca e o teste caixa-preta.
+		Teste caixa-branca é quando o analista tem acesso ao código fonte, conhece a estrutura interna do sistema e possibilita que sejam escolhidas partes específicas de um componente para serem avaliadas. É também conhecido como teste estrutural, é projetado em função da estrutura do componente e permite uma averiguação mais precisa do comportamento dessa estrutura. 
+		Teste de caixa-preta é quando o analista não tem acesso ao código fonte e desconhece a estrutura interna do sistema. É também conhecido como teste funcional, pois é baseado nos requisitos funcionais do software.
+
+	- O que é um teste de regressão?
+		O teste de regressão é uma técnica do teste de software que consiste na aplicação de versões mais recente do software, para garantir que não surgiram novos defeitos em componentes já analisados. Muitas vezes são usadas ferramentas específicas para o teste de regressão, chamadas de ferramentas de automação.
+
+	- O que é um critério de teste? Cite exemplos.
+		Um critério de teste é um conjunnto de casos de testes ou situações de testes.
+		
+	Participantes:
+		- Rafael Hideki de Macedo Sampy.  RA 1634089
+		- Henrique Biondo Nicolli Soares. RA 1633120
